@@ -1,0 +1,17 @@
+body {font-family: Garamond, serif;}
+body {background-color: #FFCAD4}
+p {color: #9d8189}
+h1, h2 {color: #f4acb7; }
+a:link {color: #D8e2dc}
+nav {background: color #ffe5d9;}
+nav a:hover{background-color: #f4acb7;}
+nav :link{color: #9d8189}
+nav a{color:#ffe5d9}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
+.quote{float: right;}
+.indeximage{float: left; margin: 20px;}
+.Part1 {display: flex; padding: 20px; background-color:white; border-radius: 1em; margin-bottom: 20px; justify-content: space-around;}
+.Part2 {display:flex; padding:20 px; background-color: whitesmoke; border-radius: 3em; justify-content: space-around;}
+.address {margin: 30px;}
+.Form {margin: 30px;}
