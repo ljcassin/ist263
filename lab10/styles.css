@@ -10,7 +10,7 @@ nav a{color:#ffe5d9}
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
 .quote{float: right;}
-.indeximage{float: left; margin: 20px;}
+.indeximage{float: left; margin: 20px; max-width: 100%;}
 .Part1 {display: flex; padding: 20px; background-color:white; border-radius: 1em; margin-bottom: 20px; justify-content: space-around;}
 .Part2 {display:flex; padding:20 px; background-color: whitesmoke; border-radius: 3em; justify-content: space-around; flex-wrap:wrap;}
 .address {margin: 30px;}
@@ -29,7 +29,6 @@ flex-basis: 25%;}
 padding: 2em;
 margin: 2em;}
 .section {margin: 5em;}
-.indeximage {max-width: 100%;}
 @media screen and (max-width:800px){
     nav a{display: block;}
     nav a span{display:none;}
