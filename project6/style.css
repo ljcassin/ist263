@@ -1,0 +1,119 @@
+.navflex {background-color: #adc199;
+    display: flex;
+    font-family: 'Roboto Condensed';
+    border-radius: 3em;
+    padding: 0.5em;
+    justify-content: space-around;
+    align-items:center; 
+}
+.homelink, .explorelink, .learnlink, .protectlink{ 
+    color: #5a4343;
+    text-decoration: none;
+}
+body {background-color: #e4ebe4;
+font-family:'Anton';
+color:#514343;
+}
+
+.home-explore{
+    display: flex;
+}
+.home-protect{
+    display:flex;
+}
+.home-learn{
+    display:flex;
+}
+.headerhome{
+    display:flex;
+    background-color: #d3e6f5;
+}
+.greenlakeshome{
+    width:400px;
+    height:auto;
+    padding: 100px;
+}
+.headercontainer2{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.explore-title{
+    width:100%;
+    background-color: #ca9a85;
+    margin: 0;
+    padding: 0;
+}
+.explore-barry{
+    width: 500px;
+    height: auto;
+}
+.explore-description{
+    padding:50px;
+}
+.container2learn{
+    flex-direction:column
+}
+.learn-title{
+    width:100%;
+    background-color: #ca9a85;
+    margin: 0;
+    padding: 0;
+}
+.learn-pic{
+    width: 200px;
+    height: auto;
+}
+.learn-description{
+    padding:50px;
+}
+.container2protect{
+    flex-direction:column
+}
+.protect-title{
+    width:100%;
+    background-color: #ca9a85;
+    margin: 0;
+    padding: 0;
+}
+.protect-pic{
+    width: 300px;
+    height: auto;
+}
+.protect-description{
+    padding:50px;
+}
+
+@media screen and (max-width:800px){
+    nav a{display: block;}
+    nav a span{display:none;}
+    .navflex {flex-direction: column;}
+    .navflex {padding: 0;}
+}
+.icons{
+    display:flex; 
+    justify-content: space-evenly;
+    padding:0;
+    margin:0;
+}
+.GLicon, .BPicon, .OLicon{
+    display:flex;
+    background-color:#d8d3a3;
+    border-radius: 0.5em;
+    padding:0.5em;
+    justify-content: center;
+    flex-direction: column;
+}
+a, a:visited {text-decoration:none; color: #514343;}
+.GLicon, .BPicon, .OLicon, .prevent-icon, .terrestrial-icon, .aquatic-icon, .statewide-icon, .oil-icon, .solar-icon{
+    display:flex;
+    background-color:#d8d3a3;
+    border-radius: 0.5em;
+    padding:0.5em;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
