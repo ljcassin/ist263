@@ -1,18 +1,19 @@
 body {font-family: Garamond, serif;}
-body {background-color: #FFF0F5}
-p {color: #9d8189}
-h1, h2 {color: #f4acb7; }
-a:link {color: #D8e2dc}
+body {background-color: #FFF0F5;}
+p {color: #4B3631;}
+h1, h2 {color: maroon;}
+a:link {color: #4B3631;}
 nav {background: color #FFF0F5;}
-nav a:hover{background-color: #f4acb7;}
-nav :link{color: #9d8189}
-nav a{color:maroon}
+nav a:hover{background-color: maroon;}
+nav :link{color: #4B3631}
+nav a{color:maroon;}
 nav {padding: 10px;}
 nav {margin-bottom: 30px;}
 .quote{float: right;}
 .indeximage{float: left; margin: 20px; max-width: 100%;}
-.Part1 {display: flex; padding: 20px; background-color:white; border-radius: 1em; margin-bottom: 20px; justify-content: space-around;}
-.Part2 {display:flex; padding:20 px; background-color: whitesmoke; border-radius: 3em; justify-content: space-around; flex-wrap:wrap;}
+.Part1 {display: flex; padding: 20px; background-color:white; border-radius: 1em; margin-bottom: 20px; justify-content: space-around; color: #4B3631;}
+.Part2 {display:flex; padding:20px; background-color: whitesmoke; border-radius: 3em; justify-content: space-around; flex-wrap:wrap; color: #4B3621;}
+a {color: #4B3631;}
 .address {margin: 30px;}
 .Form {margin: 30px;}
 h1 {text-align: center;}
@@ -24,7 +25,9 @@ background-color: wheat;
 border-radius: 2em;
 margin: 2em;
 padding: 0.5em;
-flex-basis: 25%;}
+flex-basis: 25%;
+}
+.sidebar p{color: #4B3621;}
 .flexbox2 {display: flex;
 padding: 2em;
 margin: 2em;}
