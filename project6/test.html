@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Demo</title>
+  <style>
+    .explore-row {
+      display: flex;          /* side by side */
+      flex-wrap: wrap;        /* allow wrapping if too narrow */
+      align-items: flex-start;/* align items vertically */
+      gap: 20px;              /* space between icons and image */
+    }
+
+    .icons {
+      flex: 1 1 50%;          /* half the row */
+      max-width: 50%;
+      box-sizing: border-box;
+      background: #eef;       /* just for visibility */
+      padding: 10px;
+      min-width: 0;
+      float: none !important;
+      display: block; 
+      position: static;
+    }
+
+    .explore-barry {
+      flex: 1 1 50%;          /* other half */
+      max-width: 50%;
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #fee; 
+      float: none !important;      /* just for visibility */
+    }
+
+    @media (max-width: 600px) {
+      .icons,
+      .explore-barry {
+        flex: 1 1 100%;       /* stack on small screens */
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="explore-row">
+    <div class="icons">
+      <div class="GLicon">
+        <i class="fa-solid fa-water"></i><br>
+        <a href="#">Green Lakes</a>
+      </div>
+      <div class="BPicon">
+        <i class="fa-brands fa-pagelines"></i><br>
+        <a href="#">Barry Park</a>
+      </div>
+      <div class="OLicon">
+        <i class="fa-solid fa-sun"></i><br>
+        <a href="#">Lake Onondaga</a>
+      </div>
+    </div>
+    <img src="../project/media/barry-1.jpg" alt="hilly park in summertime with trees" class="explore-barry">
+  </div>
+</body>
+</html>

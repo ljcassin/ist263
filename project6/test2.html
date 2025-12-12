@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Sanity Check</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .full-width {
+    background: lightcoral;
+    padding: 20px;
+    flex: 1 0 100%;
+  }
+
+  .half {
+    background: lightblue;
+    padding: 20px;
+    flex: 1 0 50%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Row 1 (Full width) -->
+  <div class="row">
+    <div class="full-width">Full-width row</div>
+  </div>
+
+  <!-- Row 2 (Two halves) -->
+  <div class="row">
+    <div class="half">Left half</div>
+    <div class="half">Right half</div>
+  </div>
+
+</div>
+
+</body>
+</html>
