@@ -1,7 +1,7 @@
 
 details {
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 0.5em;
   margin: 0.5em 0;
   padding: 0.5em;
   background: #F0F7F0;
@@ -9,14 +9,14 @@ details {
 details[open] {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.content{
+.dropdown-content{
     max-height: 0; 
     overflow: hidden;
     transform: translateY(-5px);
     opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease, transfrom 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
-details[open] .content {
+details[open] .dropdown-content {
   max-height: 500px; 
   opacity: 1;
   transform: translateY(0);
