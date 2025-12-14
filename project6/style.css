@@ -9,18 +9,25 @@ details {
 details[open] {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-.dropdown-content{
-    max-height: 0; 
-    overflow: hidden;
-    transform: translateY(-5px);
-    opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+details .dropdown-content {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
 }
+
+details:not([open]) .dropdown-content {
+  display: block;
+}
+
 details[open] .dropdown-content {
-  max-height: 500px; 
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
+
 h1, h2{
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
@@ -248,8 +255,67 @@ a, a:visited {text-decoration:none; color: #514343;}
     width: 5em;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
 }
+.prevent{
+    display:flex;
+    flex-direction: row;
+    background: #F0F7F0;
+    margin: 1em;
+    border-radius: 0.5em;;
+    border-color: #023817;
+    border-style: solid;
+    border-width: 0.5em;
+}
+.prevent p{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5em;
+    line-height: 2em;
+}
+.prevent h2{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: left;
+    font-weight: 400;
+    margin: 0.5em;
+    color:#023817;
+}
+.learnhead{
+    font-size: 5em;
+    text-align: center;
+    font-weight:500;
+    margin: 0.5em;
+}
+.learnintro{
+    text-align: center; 
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-family: "Roboto Flex", sans-serif;
+}
 
-
-
+.methods-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em;
+    flex-direction: row;
+}
+.boating, .firewood, .pets, .outdoor{
+    flex: 1;
+    text-align: center;
+    border-color:#4e3706;
+    border-width: 0.2em;
+    border-style: solid;
+}
+.boating h2, .firewood h2, .pets h2, .outdoor h2{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+    margin: 0.5em;
+    color:#023817;
+    background-color:#F0F7F0;
+    border-radius: 1em;
+}
 
 
