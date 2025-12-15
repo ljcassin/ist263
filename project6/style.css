@@ -89,6 +89,7 @@ color:#514343;
     padding: 0;
     display:flex;
     flex-direction: column;
+    font-family: "BBH Bogle", sans-serif;
 }
 .explore-image{
     width: 100%;
@@ -134,6 +135,7 @@ color:#514343;
     padding: 0;
     display:flex;
     flex-direction: column;
+    font-family: "BBH Bogle", sans-serif;
 }
 .learn-image{
     width: 100%;
@@ -170,6 +172,7 @@ color:#514343;
     background-color: #ca9a85;
     margin: 0;
     padding: 0;
+    font-family: "BBH Bogle", sans-serif;
 }
 .protect-leftcolumn{
     padding:5em;
@@ -201,7 +204,7 @@ img{
     nav a span{display:none;}
     .navflex {flex-direction: column;}
     .navflex {padding: 0;}
-  .icons {
+  .icons, {
     flex-direction: column !important;
     justify-content: center;
     margin:3em;
@@ -229,6 +232,7 @@ img{
     width: 100%;
     height: auto;
     margin: 0 auto;
+    position: relative;
   }
   .protect-leftcolumn{
     margin: 10em 0;
@@ -318,4 +322,210 @@ a, a:visited {text-decoration:none; color: #514343;}
     border-radius: 1em;
 }
 
+.methods-container img{
+    border-color:#4e3706;
+    border-width: 0.2em;
+    border-style: solid;
+}
+.boating p, .firewood p, .pets p, .outdoor p{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.5em;
+    line-height: 1.5em;
+}
+#terrestrial, #aquatic{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
 
+.dropdown-content {
+  display: flex;
+  align-items: flex-start;  
+  gap: 1rem;                
+}
+.dropdown-content p {
+  margin: 0.5rem 0;
+}
+
+.species-container {
+  display: flex;
+  flex-direction: row; 
+  padding: 1em; 
+  gap: 3em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.terrestrialcontainer, .aquaticcontainer {
+  flex: 1;               
+  min-width: 300px;       
+}
+
+.species-container img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+.reportbtn{
+    display:inline-block;
+    padding: 0.5em;
+    background-color:#023817;
+    font-family: "BBH Bogle", sans-serif;
+    color:#F0F7F0 !important;
+    border-radius:0.2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.reportbtn:hover{
+    background-color:#adc199;
+    color: #F0F7F0;
+}
+.species-description {
+    display:flex; 
+    flex-direction: row;
+    gap: 1em;
+    background-color:aliceblue;
+    padding: 1em;
+    border-radius: 1em;
+    justify-content: space-between;
+    margin: 1em;
+}
+.species-description p {
+  margin: 0.5rem 0;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+.explorehead{
+    display:flex;
+    background-image: url('../project/media/barry-2.jpg');
+    background-position: center;
+    min-height: 500px;
+    justify-content: flex-end;
+}
+.explorehead h1{
+    color:whitesmoke;
+    font-size: 5em;
+    font-weight: 500;
+}
+.explore-description{
+    background-color: #94b2d1;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.5em;
+    border-radius: 1em;
+    font-weight: 300;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    color:rgb(8, 8, 97)
+}
+.home p{
+    font-size: 1.5em;
+    font-family: "Roboto Flex", sans-serif;
+}
+.greenlakes, .barrypark, .onondaga {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.greenlakesinfo, .barryparkinfo, .onondagainfo {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    align-items: flex-start;
+}
+.greenlakes-img, .barrypark-img, .onondaga-img {
+    flex:0 0 500px;
+    position: sticky;
+    top: 0;
+    width: 40vh;
+    float: left;
+}
+
+.greenlakes-img img{
+    width: 100%;
+    height: auto;
+    display:block;
+}
+.greenlakes-details{
+    flex:1;
+    padding-left:2em;
+    width: 60%;
+    max-width: 600px;
+    min-width: 600px;
+    flex-shrink: 0;
+    gap: 5em;
+}
+
+#explore-greenlakes, #explore-barrypark, #explore-onondaga {
+  text-align: center;
+  font-family: "BBH Bogle", sans-serif;
+  font-size: 2em;
+  color: rgb(20, 20, 192);
+}
+.greenlakes summary, .barrypark summary, .onondaga summary {
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.5em;
+    color: #023817;
+}
+.explorepage{
+    background-color:#d1e5f4
+}
+.greenlakes details, .barrypark details, .onondaga details {
+    background-color:#c1cbb7;
+    font-size: 1em;
+
+}
+.greenlakes-details p, .barrypark-details p, .onondaga-details p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5em;
+    line-height: 1.5em;
+}
+hr{
+    border:1px solid black;
+}
+@media (max-width: 768px) {
+
+  .greenlakesinfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .greenlakes-img {
+    position: static;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .greenlakes-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .greenlakes-details {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .greenlakes-details p {
+    font-size: 1.1em;
+    text-align: left;
+  }
+}
+hr {
+  all: unset;     
+  display:block;       
+  border-top: 3px solid black; 
+}
