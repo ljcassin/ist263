@@ -9,7 +9,7 @@ details {
 details[open] {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-details .dropdown-content {
+details .dropdown-content{
   opacity: 0;
   transform: translateY(-8px);
   pointer-events: none;
@@ -204,7 +204,7 @@ img{
     nav a span{display:none;}
     .navflex {flex-direction: column;}
     .navflex {padding: 0;}
-  .icons, {
+  .icons {
     flex-direction: column !important;
     justify-content: center;
     margin:3em;
@@ -442,24 +442,16 @@ a, a:visited {text-decoration:none; color: #514343;}
 }
 .greenlakes-img, .barrypark-img, .onondaga-img {
     flex:0 0 500px;
-    position: sticky;
     top: 0;
     width: 40vh;
-    float: left;
 }
 
-.greenlakes-img img{
-    width: 100%;
-    height: auto;
-    display:block;
-}
 .greenlakes-details{
     flex:1;
     padding-left:2em;
     width: 60%;
     max-width: 600px;
     min-width: 600px;
-    flex-shrink: 0;
     gap: 5em;
 }
 
@@ -495,31 +487,32 @@ hr{
     border:1px solid black;
 }
 @media (max-width: 768px) {
-
-  .greenlakesinfo {
+  .greenlakesinfo, .barryparkinfo, .onondagainfo {
     flex-direction: column;
     align-items: center;
   }
 
-  .greenlakes-img {
+  .greenlakes-img, .barrypark-img, .onondaga-img {
     position: static;
     max-width: 100%;
     width: 100%;
   }
 
-  .greenlakes-img img {
+  .greenlakes-img img, .barrypark-img img, .onondaga-img img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
 
-  .greenlakes-details {
+  .greenlakes-details, .barrypark-details, .onondaga-details {
     width: 100%;
     max-width: 100%;
     padding-left: 0;
+    min-width: 0;
+    flex-shrink: 1;
   }
 
-  .greenlakes-details p {
+  .greenlakes-details p, .barrypark-details p, .onondaga-details p {
     font-size: 1.1em;
     text-align: left;
   }
@@ -528,4 +521,43 @@ hr {
   all: unset;     
   display:block;       
   border-top: 3px solid black; 
+}
+.protecthead{
+    display:flex;
+    background-color:rgb(198, 205, 176);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    text-align: center;
+}
+.protecthead h1{
+    font-size: 5em;
+    font-weight: 500;
+    color: #023817;
+}
+.protecthead p{
+    font-size: 1.5em;
+    font-family: "Roboto Flex", sans-serif;
+    color: #023817;
+}
+
+.actionplan, .superfundlaw, .sustainablesyr{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: "Roboto Flex", sans-serif;
+    color: #023817;
+    background-color: #d9eadc;
+}
+#greenhouse, #sustainable, #state{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em;
+    color: #023817;
+}
+
+.morebtn:hover {
+  color: #ca9a85;
 }
