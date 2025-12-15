@@ -1,0 +1,563 @@
+
+details {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: #F0F7F0;
+}
+details[open] {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+details .dropdown-content{
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+details:not([open]) .dropdown-content {
+  display: block;
+}
+
+details[open] .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+h1, h2{
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+.navflex {background-color: #adc199;
+    display: flex;
+    font-family: 'Roboto Condensed';
+    border-radius: 3em;
+    padding: 0.5em;
+    justify-content: space-around;
+    align-items:center; 
+}
+.homelink, .explorelink, .learnlink, .protectlink{ 
+    color: #5a4343;
+    text-decoration: none;
+}
+body {background-color: #e4ebe4;
+font-family:'Anton';
+color:#514343;
+}
+
+.home-protect{
+    display:flex;
+    flex-wrap:wrap;
+}
+.headerhome{
+    display:flex;
+    background-color: #d3e6f5;
+    flex-wrap: wrap;
+}
+.greenlakeshome{
+    width:400px;
+    height:auto;
+    padding: 5em;
+}
+.headercontainer2{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.explore-title{
+    width:100%;
+    background-color: #ca9a85;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    font-family: "BBH Bogle", sans-serif;
+}
+.explore-image{
+    width: 100%;
+    height: auto;
+    flex: 1 0 50%;
+    display:block;
+}
+.explore-leftcolumn{
+    padding:5em;
+    float: none;
+    display:flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+}
+.explorecontainer{
+    display: flex;
+    flex-direction:column;
+}
+.explore-text{
+    display:flex;
+    flex: 1 0 50%;
+    flex-direction: row;;
+}
+.explore-mainflex{
+    display: flex; 
+    flex-direction: row;
+    min-width:0; 
+}
+
+.learncontainer{
+    flex-direction:column;
+    min-width: 0;
+}
+.learn-mainflex{
+    display: flex; 
+    flex-direction: row;
+    min-width:0;
+}
+.learn-title{
+    width:100%;
+    background-color: #ca9a85;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    font-family: "BBH Bogle", sans-serif;
+}
+.learn-image{
+    width: 100%;
+    height: auto;
+    flex: 1 0 10%;
+    display:block;
+}
+.learn-text{
+    display:flex;
+    flex: 1 0 50%;
+    flex-direction: row;
+    min-width: 0;
+}
+.learn-rightcolumn{
+    padding: 5em;;
+    float: none;
+    display:flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    margin: 2em;
+}
+.protectcontainer{
+    flex-direction:column;
+    display: flex;
+    min-width:0;
+}
+.protect-mainflex{
+    display: flex; 
+    flex-direction: row;
+    min-width:0;
+}
+.protect-title{
+    width:100%;
+    background-color: #ca9a85;
+    margin: 0;
+    padding: 0;
+    font-family: "BBH Bogle", sans-serif;
+}
+.protect-leftcolumn{
+    padding:5em;
+    float: none;
+    display:flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    margin: 2em;
+}
+.protect-text{
+    display:flex;
+    flex: 1 0 50%;
+    flex-direction: row;
+    min-width: 0;
+}
+.protect-image{
+    width: 100%;
+    height: auto;
+    flex: 1 0 20%;
+    display:block;
+}
+img{
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width:800px){
+    nav a{display: block;}
+    nav a span{display:none;}
+    .navflex {flex-direction: column;}
+    .navflex {padding: 0;}
+  .icons {
+    flex-direction: column !important;
+    justify-content: center;
+    margin:3em;
+    padding:0.5em;
+    flex-wrap: wrap;
+    display: flex;
+    gap:1em;
+  }
+  .learn-mainflex, .protect-mainflex, .explore-mainflex{
+    flex-wrap: nowrap;
+    min-width: 0;
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .protect-leftcolumn, .explore-leftcolumn, .learn-rightcolumn{
+    padding: 2em;
+    display: flex;
+    flex: flex-wrap;
+    flex-direction: column;
+    gap:2em;
+  }
+  .explore-image, .learn-image, .protect-image{
+    flex: 1 1 100% !important;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+  .protect-leftcolumn{
+    margin: 10em 0;
+    gap:0em;
+  }
+}
+img {max-width: 100%;}
+.icons{
+    justify-content: space-evenly;
+    padding:1em;
+    margin:2em;
+    flex-direction: row;
+    flex: 1 0 50%;
+    display: flex;
+}
+a, a:visited {text-decoration:none; color: #514343;}
+.GLicon, .BPicon, .OLicon, .prevent-icon, .terrestrial-icon, .aquatic-icon, .statewide-icon, .oil-icon, .solar-icon{
+    background-color:#d8d3a3;
+    border-radius: 0.5em;
+    padding:2em;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em;
+    width: 5em;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+.prevent{
+    display:flex;
+    flex-direction: row;
+    background: #F0F7F0;
+    margin: 1em;
+    border-radius: 0.5em;;
+    border-color: #023817;
+    border-style: solid;
+    border-width: 0.5em;
+}
+.prevent p{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5em;
+    line-height: 2em;
+}
+.prevent h2{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: left;
+    font-weight: 400;
+    margin: 0.5em;
+    color:#023817;
+}
+.learnhead{
+    font-size: 5em;
+    text-align: center;
+    font-weight:500;
+    margin: 0.5em;
+}
+.learnintro{
+    text-align: center; 
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.methods-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em;
+    flex-direction: row;
+}
+.boating, .firewood, .pets, .outdoor{
+    flex: 1;
+    text-align: center;
+    border-color:#4e3706;
+    border-width: 0.2em;
+    border-style: solid;
+}
+.boating h2, .firewood h2, .pets h2, .outdoor h2{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+    margin: 0.5em;
+    color:#023817;
+    background-color:#F0F7F0;
+    border-radius: 1em;
+}
+
+.methods-container img{
+    border-color:#4e3706;
+    border-width: 0.2em;
+    border-style: solid;
+}
+.boating p, .firewood p, .pets p, .outdoor p{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0.5em;
+    line-height: 1.5em;
+}
+#terrestrial, #aquatic{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.dropdown-content {
+  display: flex;
+  align-items: flex-start;  
+  gap: 1rem;                
+}
+.dropdown-content p {
+  margin: 0.5rem 0;
+}
+
+.species-container {
+  display: flex;
+  flex-direction: row; 
+  padding: 1em; 
+  gap: 3em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.terrestrialcontainer, .aquaticcontainer {
+  flex: 1;               
+  min-width: 300px;       
+}
+
+.species-container img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+.reportbtn{
+    display:inline-block;
+    padding: 0.5em;
+    background-color:#023817;
+    font-family: "BBH Bogle", sans-serif;
+    color:#F0F7F0 !important;
+    border-radius:0.2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.reportbtn:hover{
+    background-color:#adc199;
+    color: #F0F7F0;
+}
+.species-description {
+    display:flex; 
+    flex-direction: row;
+    gap: 1em;
+    background-color:aliceblue;
+    padding: 1em;
+    border-radius: 1em;
+    justify-content: space-between;
+    margin: 1em;
+}
+.species-description p {
+  margin: 0.5rem 0;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+.explorehead{
+    display:flex;
+    background-image: url('../project/media/barry-2.jpg');
+    background-position: center;
+    min-height: 500px;
+    justify-content: flex-end;
+}
+.explorehead h1{
+    color:whitesmoke;
+    font-size: 5em;
+    font-weight: 500;
+}
+.explore-description{
+    background-color: #94b2d1;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.5em;
+    border-radius: 1em;
+    font-weight: 300;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    color:rgb(8, 8, 97)
+}
+.home p{
+    font-size: 1.5em;
+    font-family: "Roboto Flex", sans-serif;
+}
+.greenlakes, .barrypark, .onondaga {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.greenlakesinfo, .barryparkinfo, .onondagainfo {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    align-items: flex-start;
+}
+.greenlakes-img, .barrypark-img, .onondaga-img {
+    flex:0 0 500px;
+    top: 0;
+    width: 40vh;
+}
+
+.greenlakes-details{
+    flex:1;
+    padding-left:2em;
+    width: 60%;
+    max-width: 600px;
+    min-width: 600px;
+    gap: 5em;
+}
+
+#explore-greenlakes, #explore-barrypark, #explore-onondaga {
+  text-align: center;
+  font-family: "BBH Bogle", sans-serif;
+  font-size: 2em;
+  color: rgb(20, 20, 192);
+}
+.greenlakes summary, .barrypark summary, .onondaga summary {
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.5em;
+    color: #023817;
+}
+.explorepage{
+    background-color:#d1e5f4
+}
+.greenlakes details, .barrypark details, .onondaga details {
+    background-color:#c1cbb7;
+    font-size: 1em;
+
+}
+.greenlakes-details p, .barrypark-details p, .onondaga-details p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5em;
+    line-height: 1.5em;
+}
+hr{
+    border:1px solid black;
+}
+@media (max-width: 768px) {
+  .greenlakesinfo, .barryparkinfo, .onondagainfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .greenlakes-img, .barrypark-img, .onondaga-img {
+    position: static;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .greenlakes-img img, .barrypark-img img, .onondaga-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .greenlakes-details, .barrypark-details, .onondaga-details {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .greenlakes-details p, .barrypark-details p, .onondaga-details p {
+    font-size: 1.1em;
+    text-align: left;
+  }
+}
+hr {
+  all: unset;     
+  display:block;       
+  border-top: 3px solid black; 
+}
+.protecthead{
+    display:flex;
+    background-color:rgb(198, 205, 176);
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    text-align: center;
+}
+.protecthead h1{
+    font-size: 5em;
+    font-weight: 500;
+    color: #023817;
+}
+.protecthead p{
+    font-size: 1.5em;
+    font-family: "Roboto Flex", sans-serif;
+    color: #023817;
+}
+
+.actionplan, .superfundlaw, .sustainablesyr{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: "Roboto Flex", sans-serif;
+    color: #023817;
+    background-color: #d9eadc;
+}
+#greenhouse, #sustainable, #state{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 0.5em;
+    color: #023817;
+}
+
+.morebtn:hover {
+  color: #ca9a85;
+}
