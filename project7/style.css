@@ -400,17 +400,12 @@ a, a:visited {text-decoration:none; color: #514343;}
   font-size: 1.2em;
   text-align: center;
 }
-.explorehead{
-    display:flex;
-    background-image: url('../project/media/barry-2.jpg');
-    background-position: center;
-    min-height: 500px;
-    justify-content: flex-end;
-}
+
 .explorehead h1{
-    color:whitesmoke;
+    color:#4e3706;
     font-size: 5em;
     font-weight: 500;
+    text-align: center;
 }
 .explore-description{
     background-color: #94b2d1;
